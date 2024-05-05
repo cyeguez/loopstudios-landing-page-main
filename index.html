@@ -2,15 +2,19 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
+
+      
     />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -21,15 +25,16 @@
     <header class="header">
       <div class="header__logo">
         <img
-          src="./images/logo.svg"
+          src="./assets/images/logo.svg"
           alt="Logo de la página"
           class="logo__img"
         />
       </div>
 
-      <img src="./images/icon-hamburger.svg" alt="Icono del menu" />
+      <img src="./assets/images/icon-hamburger.svg" alt="Icono del menu" class="header__menu" id="btn-menu" />
+      <img src="./assets/images/icon-close.svg" alt="Icono del cerrar" class="header__close" id="btn-close" />
 
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <ul class="nav__list">
           <li class="nav__link">About</li>
           <li class="nav__link">Careers</li>
@@ -38,9 +43,9 @@
           <li class="nav__link">Support</li>
         </ul>
       </nav>
+      <div class="header__intro">Immersive experiences that deliver</div>
     </header>
 
-    <div class="">Immersive experiences that deliver</div>
 
     <main class="main">
       <section class="main__vr">
@@ -58,7 +63,7 @@
         <div class="galery__images">
           <div class="images__item">
             <img
-              src="./images/mobile/image-deep-earth.jpg"
+              src="./assets/images/mobile/image-deep-earth.jpg"
               alt="imagen del planeta tierra"
             />
             <div class="item__text">
@@ -68,7 +73,7 @@
 
           <div class="images__item">
             <img
-              src="./images/mobile/image-night-arcade.jpg"
+              src="./assets/images/mobile/image-night-arcade.jpg"
               alt="imagen de Night Arcade"
             />
             <div class="item__text">
@@ -78,7 +83,7 @@
 
           <div class="images__item">
             <img
-              src="./images/mobile/image-soccer-team.jpg"
+              src="./assets/images/mobile/image-soccer-team.jpg"
               alt="imagen de Soccer Team VR"
             />
             <div class="item__text">
@@ -87,7 +92,7 @@
           </div>
 
           <div class="images__item">
-            <img src="./images/mobile/image-grid.jpg" alt="imagen de auto" />
+            <img src="./assets/images/mobile/image-grid.jpg" alt="imagen de auto" />
             <div class="item__text">
               <p class="text__name">The grid</p>
             </div>
@@ -95,7 +100,7 @@
 
           <div class="images__item">
             <img
-              src="./images/mobile/image-from-above.jpg"
+              src="./assets/images/mobile/image-from-above.jpg"
               alt="imagen del autopista"
             />
             <div class="item__text">
@@ -105,7 +110,7 @@
 
           <div class="images__item">
             <img
-              src="./images/mobile/image-pocket-borealis.jpg"
+              src="./assets/images/mobile/image-pocket-borealis.jpg"
               alt="imagen aurora boreal"
             />
             <div class="item__text">
@@ -115,7 +120,7 @@
 
           <div class="images__item">
             <img
-              src="./images/mobile/image-curiosity.jpg"
+              src="./assets/images/mobile/image-curiosity.jpg"
               alt="imagen del planeta "
             />
             <div class="item__text">
@@ -124,7 +129,7 @@
           </div>
 
           <div class="images__item">
-            <img src="./images/mobile/image-fisheye.jpg" alt="imagen del mar" />
+            <img src="./assets/images/mobile/image-fisheye.jpg" alt="imagen del mar" />
             <div class="item__text">
               <p class="text__name">Make it fisheye</p>
             </div>
@@ -157,10 +162,10 @@
       </ul>
 
       <div class="footer__socials">
-        <img src="./images/icon-facebook.svg" alt="icon de Facebook" class="footer__img">
-        <img src="./images/icon-twitter.svg" alt="icon de Twitter" class="footer__img">
-        <img src="./images/icon-pinterest.svg" alt="icon de Printerest" class="footer__img">
-        <img src="./images/icon-instagram.svg" alt="icon de Instagram" class="footer__img">
+        <img src="./assets/images/icon-facebook.svg" alt="icon de Facebook" class="footer__img">
+        <img src="./assets/images/icon-twitter.svg" alt="icon de Twitter" class="footer__img">
+        <img src="./assets/images/icon-pinterest.svg" alt="icon de Printerest" class="footer__img">
+        <img src="./assets/images/icon-instagram.svg" alt="icon de Instagram" class="footer__img">
       </div>
     </footer>
     <h4 class="footer__copy-right">© 2021 Loopstudios. All rights reserved.</h4>
@@ -171,5 +176,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
