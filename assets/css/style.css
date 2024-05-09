@@ -51,17 +51,23 @@ body {
   transform: scaleX(1);
 }
 
+.container__page {
+  margin: 0 auto;
+  min-width: inherit;
+  width: 100%;
+}
+
 .header {
   height: 47.7333rem;
   background-image: url("../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2.8rem;
-  padding-inline: 0.4rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  padding-inline: 0.4rem;
 }
 
 .header.open-menu {
@@ -170,7 +176,8 @@ nav.open-menu {
 }
 
 .vr__image {
-  height: 250px;
+  width: 100%;
+  height: 30vh;
   background-image: url("../images/mobile/image-interactive.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -311,12 +318,59 @@ nav.open-menu {
   color: var(--Black);
 }
 
+
+@media screen and (min-width: 320px) {
+  .container__page{
+    width: 100%;
+  }
+
+
+  .header__intro {
+    width: 100%;
+    font-size: 2rem;
+    
+  }
+
+}
+
+@media screen and (min-width: 500px){
+ .container__page{
+  
+ }
+  
+  .header__intro{
+    max-width: 600px;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Modo Desktop */
 
+
 @media screen and (min-width: 768px) {
-  .header {
-    max-width: 1440px;
+  .container__page {
+    width: min(100%, 1440px);
     margin: 0 auto;
+  }
+
+  .header {
+    width: 100%;
     height: 34rem;
     background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
@@ -348,7 +402,7 @@ nav.open-menu {
     padding-inline: 0;
     font-family: var(--font2);
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav__link {
@@ -371,7 +425,7 @@ nav.open-menu {
   .main {
     max-width: 1440px;
     margin: 0 auto;
-    padding-inline: 2.9333rem;
+    padding-inline: 44px;
     position: relative;
   }
 
@@ -380,41 +434,45 @@ nav.open-menu {
   }
 
   .vr__image {
+    width: 50%;
+    height: 300px;
     background-image: url(../images/desktop/image-interactive.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 732px;
-    height: 500px;
+    background-position: top left;
   }
 
   .vr__wrap {
-    width: 705px;
-    height: 420px;
+    width: min(75%, 750px);
+    height: fit-content;
     position: relative;
-    top: -350px;
-    right: -630px;
+    top: -300px;
+    right: -347px;
     background-color: var(--White);
     z-index: 1;
+    padding-bottom: 2rem;
+    padding: 3rem;
   }
 
   .vr__title {
-    width: 60%;
+    width: 50%;
     margin-top: 75px;
-    padding-top: 98px;
     color: var(--Black);
     text-align: left;
-    margin-inline: 98px;
-    font-size: 2.1333rem;
+    margin-inline: 30px;
+    font-size: 1.7rem;
   }
 
   .vr__text {
-    width: 73%;
+    width: 65%;
     text-align: left;
-    margin-left: 98px;
+    margin-left: 30px;
+   
   }
 
   .main__galery {
     position: relative;
+    margin-top: 6rem;
   }
 
   .galery__title {
@@ -425,15 +483,81 @@ nav.open-menu {
   .galery__btn {
     position: absolute;
     top: 0;
-    right: 44px;
+    right: 0;
     padding: 3px 46px;
   }
 
   .galery__images {
-    width: 1290px;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
   }
 
+  .item__text {
+    top: 80%;
+    left: 40px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-inline: 44px;
+  }
+
+  
+  .footer__socials {
+    grid-area: 1/2/1/3;
+    justify-content: flex-end;
+    
+  }
+
+  .footer__list {
+    flex-direction: row;
+    height: fit-content;
+    margin-bottom: 0;
+    gap: 10px;
+    
+  }
+
+  .footer__copy-right {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: end;
+    
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .vr__image{
+    width: 738px;
+    height: 493px;
+  }
+  
+  .vr__wrap{ 
+    width: 62%;
+    top: -350px;
+    padding: 0;
+    font-size: 1rem;
+    right:-580px;
+    padding-left: 94px;
+    padding-block: 94px;
+
+  }
+
+  .vr__title{
+    font-size: 3rem;
+    width: 80%;
+    line-height: 3.4rem;
+  }
+  .vr__text{
+    width: 80%;
+    letter-spacing: normal;
+    font-size: 20px;
+  }
 
 }

@@ -17,328 +17,304 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
+    <div class="container__page">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo de la página"
+            class="logo__img"
+          />
+        </div>
         <img
-          src="./assets/images/logo.svg"
-          alt="Logo de la página"
-          class="logo__img"
+          src="./assets/images/icon-hamburger.svg"
+          alt="Icono del menu"
+          class="header__icon-menu"
+          id="btn-menu"
         />
-      </div>
-
-      <img
-        src="./assets/images/icon-hamburger.svg"
-        alt="Icono del menu"
-        class="header__icon-menu"
-        id="btn-menu"
-      />
-      <img
-        src="./assets/images/icon-close.svg"
-        alt="Icono del cerrar"
-        class="header__icon-close"
-        id="btn-close"
-      />
-
-      <nav class="nav" id="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link efect-link">About</a>
+        <img
+          src="./assets/images/icon-close.svg"
+          alt="Icono del cerrar"
+          class="header__icon-close"
+          id="btn-close"
+        />
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link efect-link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link efect-link">Careers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link efect-link">Events</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link efect-link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link efect-link">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__intro">Immersive experiences that deliver</div>
+      </header>
+      <main class="main">
+        <section class="main__vr">
+          <div class="vr__image"></div>
+          <div class="vr__wrap">
+            <h1 class="vr__title">The leader in interactive VR</h1>
+            <p class="vr__text">
+              Founded in 2011, Loopstudios has been producing world-class virtual
+              reality projects for some of the best companies around the globe.
+              Our award-winning creations have transformed businesses through
+              digital experiences that bind to their brand.
+            </p>
+          </div>
+        </section>
+        <section class="main__galery">
+          <h2 class="galery__title">Our creations</h2>
+          <div class="galery__images">
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-deep-earth.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-deep-earth.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-deep-earth.jpg"
+                  alt="Imagen del Planeta tierra"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  Deep <br />
+                  earth
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-night-arcade.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-night-arcade.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-deep-earth.jpg"
+                  alt="Imagen de Maquina Arcade"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  Night <br />
+                  arcade
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-soccer-team.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-soccer-team.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-soccer-team.jpg"
+                  alt="Imagen de Futbolista"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  Soccer <br />
+                  team VR
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-grid.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-grid.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-grid.jpg"
+                  alt="Imagen de Auto de carrera"
+                />
+              </picture>
+      
+              <div class="item__text">
+                <p class="text__name">
+                  The <br />
+                  grid
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-from-above.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-from-above.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-from-above.jpg"
+                  alt="Imagen de auto pista con muchas curvas"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  From up <br />
+                  above VR
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-pocket-borealis.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-pocket-borealis.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-pocket-borealis.jpg"
+                  alt="Imagen de Aurora Boreal"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">Pocket<br />borealis</p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-curiosity.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-curiosity.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-curiosity.jpg"
+                  alt="Imagen de Robot de Astronauta"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  The <br />
+                  curiosity
+                </p>
+              </div>
+            </div>
+            <div class="images__item">
+              <picture class="item__picture">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/desktop/image-fisheye.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/mobile/image-fisheye.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-fisheye.jpg"
+                  alt="Imagen de un Ojo"
+                />
+              </picture>
+              <div class="item__text">
+                <p class="text__name">
+                  Make it <br />
+                  fisheye
+                </p>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="galery__btn">See all</button>
+        </section>
+      </main>
+      <footer class="footer">
+        <h2 class="footer__title">Loopstudios</h2>
+        <ul class="footer__list">
+          <li class="footer__link efecto-link">
+            <a class="footer__item efect-link" href="#">About</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link efect-link">Careers</a>
+          <li class="footer__item">
+            <a class="footer__link efect-link" href="#">Careers</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link efect-link">Events</a>
+          <li class="footer__item">
+            <a class="footer__link efect-link" href="#">Events</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link efect-link">Products</a>
+          <li class="footer__item">
+            <a class="footer__link efect-link" href="#">Products</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link efect-link">Support</a>
+          <li class="footer__item">
+            <a class="footer__link efect-link" href="#">Support</a>
           </li>
         </ul>
-      </nav>
-      <div class="header__intro">Immersive experiences that deliver</div>
-    </header>
-
-    <main class="main">
-      <section class="main__vr">
-        <div class="vr__image"></div>
-
-        <div class="vr__wrap">
-          <h1 class="vr__title">The leader in interactive VR</h1>
-          <p class="vr__text">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
-      </section>
-
-      <section class="main__galery">
-        <h2 class="galery__title">Our creations</h2>
-
-        <div class="galery__images">
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-deep-earth.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-deep-earth.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-deep-earth.jpg"
-                alt="Imagen del Planeta tierra"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                Deep <br />
-                earth
-              </p>
-            </div>
+        <div class="footer__socials">
+          <div class="socials__container-image efect-link">
+            <img
+              src="./assets/images/icon-facebook.svg"
+              alt="icon de Facebook"
+              class="container-image__img"
+            />
           </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-night-arcade.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-night-arcade.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-deep-earth.jpg"
-                alt="Imagen de Maquina Arcade"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                Night <br />
-                arcade
-              </p>
-            </div>
+          <div class="socials__container-image efect-link">
+            <img
+              src="./assets/images/icon-twitter.svg"
+              alt="icon de Twitter"
+              class="container-image__img"
+            />
           </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-soccer-team.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-soccer-team.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-soccer-team.jpg"
-                alt="Imagen de Futbolista"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                Soccer <br />
-                team VR
-              </p>
-            </div>
+          <div class="socials__container-image efect-link">
+            <img
+              src="./assets/images/icon-pinterest.svg"
+              alt="icon de Printerest"
+              class="container-image__img"
+            />
           </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-grid.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-grid.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-grid.jpg"
-                alt="Imagen de Auto de carrera"
-              />
-            </picture>
-            
-            <div class="item__text">
-              <p class="text__name">
-                The <br />
-                grid
-              </p>
-            </div>
-          </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-from-above.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-from-above.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-from-above.jpg"
-                alt="Imagen de auto pista con muchas curvas"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                From up <br />
-                above VR
-              </p>
-            </div>
-          </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-pocket-borealis.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-pocket-borealis.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-pocket-borealis.jpg"
-                alt="Imagen de Aurora Boreal"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">Pocket<br />borealis</p>
-            </div>
-          </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-curiosity.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-curiosity.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-curiosity.jpg"
-                alt="Imagen de Robot de Astronauta"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                The <br />
-                curiosity
-              </p>
-            </div>
-          </div>
-
-          <div class="images__item">
-            <picture class="item__picture">
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/images/desktop/image-fisheye.jpg"
-              />
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/images/mobile/image-fisheye.jpg"
-              />
-              <img
-                src="./assets/images/mobile/image-fisheye.jpg"
-                alt="Imagen de un Ojo"
-              />
-            </picture>
-            <div class="item__text">
-              <p class="text__name">
-                Make it <br />
-                fisheye
-              </p>
-            </div>
+          <div class="socials__container-image efect-link">
+            <img
+              src="./assets/images/icon-instagram.svg"
+              alt="icon de Instagram"
+              class="container-image__img"
+            />
           </div>
         </div>
-
-        <button type="button" class="galery__btn">See all</button>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <h2 class="footer__title">Loopstudios</h2>
-
-      <ul class="footer__list">
-        <li class="footer__link efecto-link">
-          <a class="footer__item efect-link" href="#">About</a>
-        </li>
-
-        <li class="footer__item">
-          <a class="footer__link efect-link" href="#">Careers</a>
-        </li>
-
-        <li class="footer__item">
-          <a class="footer__link efect-link" href="#">Events</a>
-        </li>
-
-        <li class="footer__item">
-          <a class="footer__link efect-link" href="#">Products</a>
-        </li>
-
-        <li class="footer__item">
-          <a class="footer__link efect-link" href="#">Support</a>
-        </li>
-      </ul>
-
-      <div class="footer__socials">
-        <div class="socials__container-image efect-link">
-          <img
-            src="./assets/images/icon-facebook.svg"
-            alt="icon de Facebook"
-            class="container-image__img"
-          />
-        </div>
-
-        <div class="socials__container-image efect-link">
-          <img
-            src="./assets/images/icon-twitter.svg"
-            alt="icon de Twitter"
-            class="container-image__img"
-          />
-        </div>
-
-        <div class="socials__container-image efect-link">
-          <img
-            src="./assets/images/icon-pinterest.svg"
-            alt="icon de Printerest"
-            class="container-image__img"
-          />
-        </div>
-
-        <div class="socials__container-image efect-link">
-          <img
-            src="./assets/images/icon-instagram.svg"
-            alt="icon de Instagram"
-            class="container-image__img"
-          />
-        </div>
+        <h4 class="footer__copy-right">
+          © 2021 Loopstudios. All rights reserved.
+        </h4>
+      </footer>
+      <div class="attribution">
+        <p class="attribution__text">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+          . Coded by <a href="#" class="atribution__author">César Yeguez</a>.
+        </p>
       </div>
-
-      <h4 class="footer__copy-right">
-        © 2021 Loopstudios. All rights reserved.
-      </h4>
-    </footer>
-
-    <div class="attribution">
-      <p class="attribution__text">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >
-        . Coded by <a href="#" class="atribution__author">César Yeguez</a>.
-      </p>
     </div>
     <script src="./assets/js/app.js"></script>
   </body>
