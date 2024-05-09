@@ -334,9 +334,7 @@ nav.open-menu {
 }
 
 @media screen and (min-width: 500px){
- .container__page{
-  
- }
+ 
   
   .header__intro{
     max-width: 600px;
